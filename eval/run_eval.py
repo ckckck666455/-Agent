@@ -26,6 +26,9 @@ from shopagent.config import Settings
 from shopagent.guardrails import DEFENSIVE_PATTERNS
 from shopagent.storage import Store
 
+# 评测必须与当前日期解耦，否则跨天/CI 会把售后窗口用例跑红。
+os.environ.setdefault("DEMO_NOW", "2026-11-04 14:00")
+
 
 def load_cases(path: Path) -> List[Dict[str, Any]]:
     return json.loads(path.read_text(encoding="utf-8"))
