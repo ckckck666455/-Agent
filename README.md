@@ -1,5 +1,6 @@
 # 小美 · 全品类生活馆 Agent
 
+[![CI](https://github.com/ckckck666455/-Agent/actions/workflows/ci.yml/badge.svg)](https://github.com/ckckck666455/-Agent/actions/workflows/ci.yml)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Tests](https://img.shields.io/badge/tests-55%20passed-brightgreen)
@@ -672,6 +673,7 @@ $env:PYTHONIOENCODING='utf-8'
 
 ## 15. 开源与发布
 
+- GitHub 仓库：https://github.com/ckckck666455/-Agent
 - 协议：[MIT License](LICENSE)
 - 数据与商标说明：[NOTICE.md](NOTICE.md)
 - 数据与隐私：[docs/data-privacy.md](docs/data-privacy.md)
