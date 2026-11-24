@@ -1,0 +1,1553 @@
+[
+  {
+    "id": "P001",
+    "name": "清润控油面霜",
+    "brand": "澄研",
+    "category": "面霜",
+    "price": 299,
+    "original_price": 359,
+    "skin_types": [
+      "油皮",
+      "混合肌"
+    ],
+    "concerns": [
+      "控油",
+      "毛孔",
+      "痘痘"
+    ],
+    "ingredients": [
+      "3%烟酰胺",
+      "锌PCA",
+      "积雪草提取物"
+    ],
+    "description": "轻薄哑光质地，帮助减少表面油光，兼顾保湿与屏障维稳，适合春夏或油皮日常使用。",
+    "usage": "早晚洁面、精华后取黄豆大小，按压全脸，T 区可薄涂。",
+    "cautions": "含烟酰胺，首次使用建议耳后测试；敏感肌先隔天使用建立耐受。",
+    "stock": 50,
+    "rating": 4.8,
+    "reviews": 1286,
+    "tags": [
+      "控油",
+      "哑光",
+      "油皮友好",
+      "春夏"
+    ],
+    "aliases": [
+      "清润面霜",
+      "清爽面霜"
+    ],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 54,
+    "return_rate": 0.035,
+    "gross_margin": 0.28
+  },
+  {
+    "id": "P002",
+    "name": "修护保湿面霜",
+    "brand": "澄研",
+    "category": "面霜",
+    "price": 399,
+    "original_price": 469,
+    "skin_types": [
+      "干皮",
+      "敏感肌"
+    ],
+    "concerns": [
+      "保湿",
+      "修护",
+      "泛红"
+    ],
+    "ingredients": [
+      "神经酰胺 NP",
+      "角鲨烷",
+      "泛醇 B5"
+    ],
+    "description": "奶油质地但不厚重，补充脂质、缓解干燥紧绷，适合干皮、敏感肌和换季维稳。",
+    "usage": "晚间护肤最后一步，取珍珠大小乳化后按压全脸，干燥处可叠加。",
+    "cautions": "极少数人对角鲨烷不耐受，建议先局部测试；不建议厚敷过夜。",
+    "stock": 30,
+    "rating": 4.9,
+    "reviews": 932,
+    "tags": [
+      "修护",
+      "保湿",
+      "敏感肌",
+      "换季"
+    ],
+    "aliases": [
+      "神经酰胺面霜"
+    ],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 39,
+    "return_rate": 0.043,
+    "gross_margin": 0.325
+  },
+  {
+    "id": "P003",
+    "name": "焕亮精华",
+    "brand": "澄研",
+    "category": "精华",
+    "price": 499,
+    "original_price": 599,
+    "skin_types": [
+      "所有肤质"
+    ],
+    "concerns": [
+      "提亮",
+      "暗沉",
+      "痘印"
+    ],
+    "ingredients": [
+      "维C衍生物",
+      "烟酰胺",
+      "传明酸"
+    ],
+    "description": "温和提亮配方，针对熬夜暗沉和痘印，质地清爽，早晚均可使用。",
+    "usage": "洁面后取 2-3 滴，避开眼周，后续叠加面霜；白天需做好防晒。",
+    "cautions": "含烟酰胺与酸类衍生物，不建议与高浓度酸类同晚叠加；孕期使用前请咨询医生。",
+    "stock": 20,
+    "rating": 4.7,
+    "reviews": 764,
+    "tags": [
+      "提亮",
+      "痘印",
+      "熬夜",
+      "温和"
+    ],
+    "aliases": [
+      "焕亮"
+    ],
+    "is_new": true,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 32,
+    "return_rate": 0.051,
+    "gross_margin": 0.37
+  },
+  {
+    "id": "P004",
+    "name": "水杨酸净痘凝胶",
+    "brand": "澄研",
+    "category": "精华",
+    "price": 159,
+    "original_price": 189,
+    "skin_types": [
+      "油皮",
+      "痘痘肌"
+    ],
+    "concerns": [
+      "痘痘",
+      "闭口",
+      "黑头"
+    ],
+    "ingredients": [
+      "1%水杨酸",
+      "茶树精油",
+      "积雪草提取物"
+    ],
+    "description": "局部点涂型凝胶，帮助疏通毛孔、改善闭口和痘痘，清爽不黏腻。",
+    "usage": "仅点涂在痘痘或闭口处，每晚一次；建立耐受后可隔天全脸薄涂。",
+    "cautions": "含水杨酸，孕期、哺乳期及屏障受损时慎用；避免与视黄醇同晚叠加，白天注意防晒。",
+    "stock": 80,
+    "rating": 4.6,
+    "reviews": 1540,
+    "tags": [
+      "祛痘",
+      "闭口",
+      "水杨酸",
+      "局部护理"
+    ],
+    "aliases": [
+      "净痘凝胶",
+      "水杨酸凝胶"
+    ],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 71,
+    "return_rate": 0.059,
+    "gross_margin": 0.415
+  },
+  {
+    "id": "P005",
+    "name": "氨基酸净澈洁面乳",
+    "brand": "澄研",
+    "category": "洁面",
+    "price": 89,
+    "original_price": 109,
+    "skin_types": [
+      "所有肤质",
+      "敏感肌"
+    ],
+    "concerns": [
+      "清洁",
+      "温和",
+      "屏障"
+    ],
+    "ingredients": [
+      "氨基酸表活",
+      "神经酰胺",
+      "甘油"
+    ],
+    "description": "弱酸性氨基酸配方，洗后不紧绷，适合晨洁和敏感肌日常清洁。",
+    "usage": "取一元硬币大小，加水揉出泡沫后轻柔打圈 30 秒，温水洗净。",
+    "cautions": "避免入眼；浓妆建议先使用卸妆产品。",
+    "stock": 120,
+    "rating": 4.9,
+    "reviews": 2103,
+    "tags": [
+      "氨基酸",
+      "温和",
+      "敏感肌",
+      "晨洁"
+    ],
+    "aliases": [
+      "氨基酸洁面"
+    ],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 99,
+    "return_rate": 0.067,
+    "gross_margin": 0.46
+  },
+  {
+    "id": "P006",
+    "name": "舒缓修护精华",
+    "brand": "澄研",
+    "category": "精华",
+    "price": 329,
+    "original_price": 399,
+    "skin_types": [
+      "敏感肌",
+      "干皮"
+    ],
+    "concerns": [
+      "泛红",
+      "屏障",
+      "刺痛"
+    ],
+    "ingredients": [
+      "积雪草苷",
+      "依克多因",
+      "泛醇 B5"
+    ],
+    "description": "水感精华，针对换季泛红、干燥刺痛和屏障脆弱，配方精简。",
+    "usage": "洁面后取 3-4 滴轻拍全脸，泛红处可叠加；急性过敏期先停用并就医。",
+    "cautions": "不能替代药品；若出现持续红肿、渗液，请立即停用并咨询皮肤科医生。",
+    "stock": 45,
+    "rating": 4.8,
+    "reviews": 688,
+    "tags": [
+      "舒缓",
+      "修护",
+      "敏感肌",
+      "换季"
+    ],
+    "aliases": [
+      "积雪草精华"
+    ],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 37,
+    "return_rate": 0.035,
+    "gross_margin": 0.505
+  },
+  {
+    "id": "P007",
+    "name": "烟酰胺透亮身体乳",
+    "brand": "澄研",
+    "category": "身体护理",
+    "price": 129,
+    "original_price": 159,
+    "skin_types": [
+      "所有肤质"
+    ],
+    "concerns": [
+      "保湿",
+      "提亮",
+      "粗糙"
+    ],
+    "ingredients": [
+      "5%烟酰胺",
+      "乳木果油",
+      "尿素"
+    ],
+    "description": "滋润不黏腻，改善身体干燥粗糙，长期使用帮助均匀肤色。",
+    "usage": "沐浴后 3 分钟内涂抹全身，手肘、膝盖等粗糙处可叠加。",
+    "cautions": "含烟酰胺，极少数人可能不耐受；使用期间注意身体防晒。",
+    "stock": 60,
+    "rating": 4.7,
+    "reviews": 845,
+    "tags": [
+      "身体乳",
+      "提亮",
+      "保湿",
+      "烟酰胺"
+    ],
+    "aliases": [
+      "烟酰胺身体乳",
+      "透亮身体乳"
+    ],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 46,
+    "return_rate": 0.043,
+    "gross_margin": 0.28
+  },
+  {
+    "id": "P008",
+    "name": "轻透防晒乳 SPF50+",
+    "brand": "澄研",
+    "category": "防晒",
+    "price": 189,
+    "original_price": 229,
+    "skin_types": [
+      "所有肤质",
+      "油皮"
+    ],
+    "concerns": [
+      "防晒",
+      "清爽",
+      "不搓泥"
+    ],
+    "ingredients": [
+      "氧化锌",
+      "二氧化钛",
+      "烟酰胺"
+    ],
+    "description": "物化结合防晒，SPF50+ PA++++，成膜快、不泛白，适合通勤和户外。",
+    "usage": "出门前 15 分钟涂抹，面部约一元硬币量；户外每 2-3 小时补涂。",
+    "cautions": "含防晒剂，敏感肌先局部测试；需配合硬防晒，不能完全依赖防晒霜。",
+    "stock": 75,
+    "rating": 4.8,
+    "reviews": 1197,
+    "tags": [
+      "防晒",
+      "清爽",
+      "通勤",
+      "SPF50"
+    ],
+    "aliases": [
+      "轻透防晒"
+    ],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 55,
+    "return_rate": 0.051,
+    "gross_margin": 0.325
+  },
+  {
+    "id": "P009",
+    "name": "玻尿酸补水面膜",
+    "brand": "澄研",
+    "category": "面膜",
+    "price": 99,
+    "original_price": 129,
+    "skin_types": [
+      "干皮",
+      "所有肤质"
+    ],
+    "concerns": [
+      "保湿",
+      "急救",
+      "干燥"
+    ],
+    "ingredients": [
+      "透明质酸钠",
+      "泛醇 B5",
+      "海藻糖"
+    ],
+    "description": "精华液充足的贴片面膜，适合熬夜、空调房和妆前急救补水。",
+    "usage": "洁面后敷 10-15 分钟，取下面膜轻拍吸收，无需清洗，后续锁水。",
+    "cautions": "不建议每天敷；敷后若黏腻可用清水冲洗。敏感肌先做局部测试。",
+    "stock": 100,
+    "rating": 4.6,
+    "reviews": 1760,
+    "tags": [
+      "补水面膜",
+      "急救",
+      "熬夜",
+      "妆前"
+    ],
+    "aliases": [
+      "玻尿酸面膜"
+    ],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 80,
+    "return_rate": 0.059,
+    "gross_margin": 0.37
+  },
+  {
+    "id": "P010",
+    "name": "紧致抗老眼霜",
+    "brand": "澄研",
+    "category": "眼霜",
+    "price": 459,
+    "original_price": 559,
+    "skin_types": [
+      "所有肤质"
+    ],
+    "concerns": [
+      "抗老",
+      "细纹",
+      "黑眼圈"
+    ],
+    "ingredients": [
+      "视黄醇衍生物",
+      "胜肽",
+      "咖啡因"
+    ],
+    "description": "滋润但不长脂肪粒的眼霜，针对眼周干纹、松弛和熬夜浮肿。",
+    "usage": "早晚取米粒大小，点涂眼周，用无名指轻按至吸收；白天注意防晒。",
+    "cautions": "含视黄醇衍生物，孕期哺乳期慎用；初次使用建议隔晚使用，避免入眼。",
+    "stock": 25,
+    "rating": 4.7,
+    "reviews": 521,
+    "tags": [
+      "眼霜",
+      "抗老",
+      "细纹",
+      "胜肽"
+    ],
+    "aliases": [],
+    "is_new": true,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 24,
+    "return_rate": 0.067,
+    "gross_margin": 0.415
+  },
+  {
+    "id": "P011",
+    "name": "男士清爽控油洁面",
+    "brand": "澄研",
+    "category": "洁面",
+    "price": 79,
+    "original_price": 99,
+    "skin_types": [
+      "油皮",
+      "混合肌"
+    ],
+    "concerns": [
+      "控油",
+      "清洁",
+      "黑头"
+    ],
+    "ingredients": [
+      "氨基酸表活",
+      "金缕梅提取物",
+      "薄荷醇"
+    ],
+    "description": "针对男士油性肌肤的清爽洁面，清洁力适中，洗后不假滑。",
+    "usage": "早晚取适量加水揉搓，重点清洁 T 区和下巴，温水洗净。",
+    "cautions": "含薄荷醇，敏感肌不建议使用；避免入眼。",
+    "stock": 90,
+    "rating": 4.5,
+    "reviews": 640,
+    "tags": [
+      "男士",
+      "控油",
+      "洁面",
+      "清爽"
+    ],
+    "aliases": [],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 41,
+    "return_rate": 0.035,
+    "gross_margin": 0.46
+  },
+  {
+    "id": "P012",
+    "name": "植萃净颜卸妆膏",
+    "brand": "澄研",
+    "category": "卸妆",
+    "price": 139,
+    "original_price": 169,
+    "skin_types": [
+      "所有肤质"
+    ],
+    "concerns": [
+      "卸妆",
+      "清洁",
+      "不闷痘"
+    ],
+    "ingredients": [
+      "植物油",
+      "乳化剂",
+      "维生素E"
+    ],
+    "description": "遇水快速乳化，能卸除日常防晒和淡妆，洗后不油腻。",
+    "usage": "干手干脸取适量按摩 30 秒，加水乳化至乳白色，再用洁面二次清洁。",
+    "cautions": "浓妆眼唇建议使用专用眼唇卸；痘肌注意充分乳化。",
+    "stock": 40,
+    "rating": 4.7,
+    "reviews": 412,
+    "tags": [
+      "卸妆",
+      "乳化快",
+      "防晒",
+      "淡妆"
+    ],
+    "aliases": [
+      "净颜卸妆"
+    ],
+    "is_new": false,
+    "department": "美妆",
+    "audience": [
+      "成人"
+    ],
+    "attributes": {},
+    "sales_30d": 25,
+    "return_rate": 0.043,
+    "gross_margin": 0.505
+  },
+  {
+    "id": "P013",
+    "name": "男士纯棉衬衫",
+    "brand": "澄研",
+    "category": "衬衫",
+    "department": "服饰",
+    "price": 199,
+    "original_price": 259,
+    "audience": [
+      "男士",
+      "成人"
+    ],
+    "attributes": {
+      "尺码": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "颜色": [
+        "白色",
+        "浅蓝"
+      ],
+      "材质": "100%棉"
+    },
+    "tags": [
+      "纯棉",
+      "通勤",
+      "免烫"
+    ],
+    "stock": 40,
+    "rating": 4.7,
+    "reviews": 326,
+    "description": "100% 精梳棉，版型挺括不紧绷，适合通勤和正式场合。",
+    "usage": "机洗选择轻柔模式，深浅色分开洗；低温熨烫。",
+    "cautions": "纯棉面料首次洗涤可能轻微缩水，建议按尺码表选择。",
+    "aliases": [
+      "男士衬衫",
+      "纯棉衬衫",
+      "通勤衬衫"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 23,
+    "return_rate": 0.086,
+    "gross_margin": 0.28
+  },
+  {
+    "id": "P014",
+    "name": "女士针织开衫",
+    "brand": "澄研",
+    "category": "针织衫",
+    "department": "服饰",
+    "price": 239,
+    "original_price": 299,
+    "audience": [
+      "女士",
+      "成人"
+    ],
+    "attributes": {
+      "尺码": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "颜色": [
+        "燕麦色",
+        "黑色",
+        "雾蓝"
+      ],
+      "材质": "棉混纺"
+    },
+    "tags": [
+      "针织",
+      "通勤",
+      "春秋"
+    ],
+    "stock": 35,
+    "rating": 4.6,
+    "reviews": 214,
+    "description": "柔软针织面料，短款版型，可单穿也可叠穿。",
+    "usage": "建议手洗或洗衣袋机洗，平铺晾干。",
+    "cautions": "针织面料避免悬挂暴晒，防止变形。",
+    "aliases": [
+      "针织开衫",
+      "女士开衫"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 19,
+    "return_rate": 0.094,
+    "gross_margin": 0.325
+  },
+  {
+    "id": "P015",
+    "name": "儿童卡通卫衣",
+    "brand": "澄研",
+    "category": "卫衣",
+    "department": "服饰",
+    "price": 129,
+    "original_price": 159,
+    "audience": [
+      "儿童"
+    ],
+    "attributes": {
+      "尺码": [
+        "110",
+        "120",
+        "130",
+        "140",
+        "150"
+      ],
+      "颜色": [
+        "奶油白",
+        "雾霾蓝"
+      ],
+      "材质": "棉混纺"
+    },
+    "tags": [
+      "儿童",
+      "卫衣",
+      "卡通"
+    ],
+    "stock": 60,
+    "rating": 4.8,
+    "reviews": 431,
+    "description": "柔软毛圈布，宽松版型，适合 4-12 岁儿童日常穿着。",
+    "usage": "翻面机洗，避免高温烘干。",
+    "cautions": "请按身高和尺码表选择；深色衣物分开洗涤。",
+    "aliases": [
+      "儿童卫衣",
+      "卡通卫衣"
+    ],
+    "is_new": true,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 25,
+    "return_rate": 0.102,
+    "gross_margin": 0.37
+  },
+  {
+    "id": "P016",
+    "name": "老年加绒马甲",
+    "brand": "澄研",
+    "category": "马甲",
+    "department": "服饰",
+    "price": 189,
+    "original_price": 239,
+    "audience": [
+      "老人"
+    ],
+    "attributes": {
+      "尺码": [
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL"
+      ],
+      "颜色": [
+        "藏青",
+        "深灰"
+      ],
+      "材质": "摇粒绒"
+    },
+    "tags": [
+      "加绒",
+      "保暖",
+      "老人"
+    ],
+    "stock": 28,
+    "rating": 4.7,
+    "reviews": 188,
+    "description": "轻量摇粒绒内里，前襟拉链，适合秋冬室内外叠穿。",
+    "usage": "机洗轻柔，避免高温熨烫。",
+    "cautions": "建议按胸围选择，内搭厚衣时选大一码。",
+    "aliases": [
+      "加绒马甲",
+      "老年马甲"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 12,
+    "return_rate": 0.07,
+    "gross_margin": 0.415
+  },
+  {
+    "id": "P017",
+    "name": "男士轻便跑鞋",
+    "brand": "澄研",
+    "category": "运动鞋",
+    "department": "鞋",
+    "price": 329,
+    "original_price": 399,
+    "audience": [
+      "男士",
+      "成人"
+    ],
+    "attributes": {
+      "尺码": [
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "颜色": [
+        "黑色",
+        "灰色"
+      ],
+      "鞋面": "网面"
+    },
+    "tags": [
+      "轻便",
+      "缓震",
+      "通勤"
+    ],
+    "stock": 32,
+    "rating": 4.6,
+    "reviews": 296,
+    "description": "网面透气，EVA 缓震中底，适合日常通勤和轻运动。",
+    "usage": "建议按平时运动鞋尺码选择；脚宽可选大半码。",
+    "cautions": "网面鞋面避免接触尖锐物；雨天不建议长时间穿着。",
+    "aliases": [
+      "男士跑鞋",
+      "轻便跑鞋"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 18,
+    "return_rate": 0.078,
+    "gross_margin": 0.46
+  },
+  {
+    "id": "P018",
+    "name": "女士软底乐福鞋",
+    "brand": "澄研",
+    "category": "乐福鞋",
+    "department": "鞋",
+    "price": 269,
+    "original_price": 329,
+    "audience": [
+      "女士",
+      "成人"
+    ],
+    "attributes": {
+      "尺码": [
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "颜色": [
+        "黑色",
+        "米白"
+      ],
+      "鞋底": "软底"
+    },
+    "tags": [
+      "软底",
+      "通勤",
+      "一脚蹬"
+    ],
+    "stock": 26,
+    "rating": 4.5,
+    "reviews": 173,
+    "description": "软底一脚蹬，鞋口不磨脚，适合通勤和长时间站立。",
+    "usage": "新鞋建议先短时间穿着适应；避免整鞋水洗。",
+    "cautions": "脚背较高建议选大半码。",
+    "aliases": [
+      "乐福鞋",
+      "女士单鞋"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 13,
+    "return_rate": 0.086,
+    "gross_margin": 0.505
+  },
+  {
+    "id": "P019",
+    "name": "儿童防滑运动鞋",
+    "brand": "澄研",
+    "category": "运动鞋",
+    "department": "鞋",
+    "price": 159,
+    "original_price": 199,
+    "audience": [
+      "儿童"
+    ],
+    "attributes": {
+      "尺码": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34"
+      ],
+      "颜色": [
+        "粉色",
+        "蓝色"
+      ],
+      "鞋底": "防滑橡胶"
+    },
+    "tags": [
+      "儿童",
+      "防滑",
+      "魔术贴"
+    ],
+    "stock": 48,
+    "rating": 4.8,
+    "reviews": 352,
+    "description": "魔术贴穿脱，防滑橡胶底，适合幼儿园和日常户外。",
+    "usage": "按孩子脚长加 0.5-1cm 选择。",
+    "cautions": "建议下午测量脚长；定期检查鞋底磨损。",
+    "aliases": [
+      "儿童运动鞋",
+      "防滑童鞋"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 24,
+    "return_rate": 0.094,
+    "gross_margin": 0.28
+  },
+  {
+    "id": "P020",
+    "name": "老人防滑健步鞋",
+    "brand": "澄研",
+    "category": "健步鞋",
+    "department": "鞋",
+    "price": 259,
+    "original_price": 319,
+    "audience": [
+      "老人"
+    ],
+    "attributes": {
+      "尺码": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "颜色": [
+        "黑色",
+        "深棕"
+      ],
+      "鞋底": "防滑橡胶",
+      "鞋楦": "宽楦"
+    },
+    "tags": [
+      "防滑",
+      "宽楦",
+      "老人",
+      "健步"
+    ],
+    "stock": 36,
+    "rating": 4.8,
+    "reviews": 267,
+    "description": "宽楦不挤脚，防滑橡胶大底，适合老人日常散步和买菜。",
+    "usage": "建议按平时鞋码选择；脚肿可选大一码。",
+    "cautions": "防滑不等于绝对不滑，湿滑地面仍需小心。",
+    "aliases": [
+      "老人健步鞋",
+      "防滑健步鞋",
+      "老年鞋"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 20,
+    "return_rate": 0.102,
+    "gross_margin": 0.325
+  },
+  {
+    "id": "P021",
+    "name": "通勤托特包",
+    "brand": "澄研",
+    "category": "托特包",
+    "department": "箱包",
+    "price": 299,
+    "original_price": 369,
+    "audience": [
+      "女士",
+      "成人"
+    ],
+    "attributes": {
+      "颜色": [
+        "黑色",
+        "焦糖色"
+      ],
+      "容量": "可放 14 英寸电脑",
+      "材质": "PU"
+    },
+    "tags": [
+      "通勤",
+      "大容量",
+      "托特包"
+    ],
+    "stock": 22,
+    "rating": 4.6,
+    "reviews": 145,
+    "description": "大容量托特包，内置电脑隔层和拉链袋，适合通勤。",
+    "usage": "避免长时间暴晒；PU 材质用湿布擦拭。",
+    "cautions": "浅色款注意防染色；不建议机洗。",
+    "aliases": [
+      "托特包",
+      "通勤包",
+      "大容量包"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 15,
+    "return_rate": 0.035,
+    "gross_margin": 0.37
+  },
+  {
+    "id": "P022",
+    "name": "轻量双肩包",
+    "brand": "澄研",
+    "category": "双肩包",
+    "department": "箱包",
+    "price": 199,
+    "original_price": 249,
+    "audience": [
+      "全人群"
+    ],
+    "attributes": {
+      "颜色": [
+        "黑色",
+        "灰色"
+      ],
+      "容量": "20L",
+      "重量": "约 420g"
+    },
+    "tags": [
+      "轻量",
+      "双肩包",
+      "通勤"
+    ],
+    "stock": 44,
+    "rating": 4.5,
+    "reviews": 208,
+    "description": "轻量防泼水面料，主袋可放 14 英寸电脑，适合通勤和短途出行。",
+    "usage": "用湿布擦拭，阴凉处晾干。",
+    "cautions": "防泼水不等于完全防水，大雨请加防雨罩。",
+    "aliases": [
+      "双肩包",
+      "轻量背包"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 15,
+    "return_rate": 0.043,
+    "gross_margin": 0.415
+  },
+  {
+    "id": "P023",
+    "name": "儿童护脊书包",
+    "brand": "澄研",
+    "category": "书包",
+    "department": "箱包",
+    "price": 229,
+    "original_price": 289,
+    "audience": [
+      "儿童"
+    ],
+    "attributes": {
+      "颜色": [
+        "蓝色",
+        "粉色"
+      ],
+      "适用": "小学 1-4 年级",
+      "重量": "约 680g"
+    },
+    "tags": [
+      "护脊",
+      "书包",
+      "儿童"
+    ],
+    "stock": 30,
+    "rating": 4.7,
+    "reviews": 196,
+    "description": "S 型肩带和胸扣，背板透气，适合小学生日常使用。",
+    "usage": "调整肩带贴合背部，重物靠近背部放置。",
+    "cautions": "书包重量建议不超过孩子体重的 10%。",
+    "aliases": [
+      "护脊书包",
+      "儿童书包"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 13,
+    "return_rate": 0.051,
+    "gross_margin": 0.46
+  },
+  {
+    "id": "P024",
+    "name": "无糖乌龙茶 500ml×15",
+    "brand": "澄研",
+    "category": "茶饮料",
+    "department": "食品饮料",
+    "price": 59.9,
+    "original_price": 69.9,
+    "audience": [
+      "成人",
+      "全人群"
+    ],
+    "attributes": {
+      "规格": "500ml×15 瓶",
+      "糖分": "0 糖",
+      "口味": "乌龙茶"
+    },
+    "tags": [
+      "无糖",
+      "茶饮料",
+      "整箱"
+    ],
+    "stock": 80,
+    "rating": 4.7,
+    "reviews": 864,
+    "description": "0 糖 0 脂乌龙茶，清爽解腻，适合日常佐餐。",
+    "usage": "冷藏后口感更佳；开封后建议当天饮用。",
+    "cautions": "含咖啡因，儿童、孕妇和对咖啡因敏感者适量。",
+    "aliases": [
+      "无糖乌龙茶",
+      "乌龙茶",
+      "茶饮料"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 46,
+    "return_rate": 0.044,
+    "gross_margin": 0.505
+  },
+  {
+    "id": "P025",
+    "name": "100% 橙汁 1L×6",
+    "brand": "澄研",
+    "category": "果汁",
+    "department": "食品饮料",
+    "price": 89,
+    "original_price": 109,
+    "audience": [
+      "全人群"
+    ],
+    "attributes": {
+      "规格": "1L×6 盒",
+      "果汁含量": "100%",
+      "口味": "橙汁"
+    },
+    "tags": [
+      "果汁",
+      "无添加",
+      "家庭装"
+    ],
+    "stock": 55,
+    "rating": 4.6,
+    "reviews": 312,
+    "description": "100% 橙汁，不额外添加糖，适合家庭早餐。",
+    "usage": "开封后冷藏并在 48 小时内喝完。",
+    "cautions": "含天然果糖，控糖人群适量；儿童建议稀释或控制量。",
+    "aliases": [
+      "橙汁",
+      "果汁",
+      "100%橙汁"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 23,
+    "return_rate": 0.052,
+    "gross_margin": 0.28
+  },
+  {
+    "id": "P026",
+    "name": "低脂纯牛奶 250ml×24",
+    "brand": "澄研",
+    "category": "牛奶",
+    "department": "食品饮料",
+    "price": 69.9,
+    "original_price": 79.9,
+    "audience": [
+      "全人群"
+    ],
+    "attributes": {
+      "规格": "250ml×24 盒",
+      "脂肪": "低脂",
+      "口味": "原味"
+    },
+    "tags": [
+      "牛奶",
+      "低脂",
+      "家庭装"
+    ],
+    "stock": 70,
+    "rating": 4.8,
+    "reviews": 1024,
+    "description": "低脂纯牛奶，每盒 250ml，适合早餐和日常补充。",
+    "usage": "常温保存，开封后冷藏并尽快饮用。",
+    "cautions": "乳糖不耐受者建议选择无乳糖产品。",
+    "aliases": [
+      "低脂牛奶",
+      "纯牛奶",
+      "牛奶"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 52,
+    "return_rate": 0.02,
+    "gross_margin": 0.325
+  },
+  {
+    "id": "P027",
+    "name": "儿童奶酪棒 500g",
+    "brand": "澄研",
+    "category": "奶酪",
+    "department": "食品饮料",
+    "price": 49.9,
+    "original_price": 59.9,
+    "audience": [
+      "儿童"
+    ],
+    "attributes": {
+      "规格": "500g",
+      "钙含量": "高钙",
+      "保存": "冷藏"
+    },
+    "tags": [
+      "儿童",
+      "奶酪",
+      "高钙",
+      "零食"
+    ],
+    "stock": 65,
+    "rating": 4.7,
+    "reviews": 578,
+    "description": "高钙奶酪棒，独立包装，适合 3 岁以上儿童加餐。",
+    "usage": "冷藏保存，开封后尽快食用。",
+    "cautions": "含乳制品，乳蛋白过敏儿童不宜；3 岁以下需成人看护。",
+    "aliases": [
+      "奶酪棒",
+      "儿童奶酪"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 36,
+    "return_rate": 0.028,
+    "gross_margin": 0.37
+  },
+  {
+    "id": "P028",
+    "name": "中老年高钙奶粉 800g",
+    "brand": "澄研",
+    "category": "奶粉",
+    "department": "食品饮料",
+    "price": 129,
+    "original_price": 159,
+    "audience": [
+      "老人"
+    ],
+    "attributes": {
+      "规格": "800g",
+      "钙含量": "高钙",
+      "糖分": "低糖"
+    },
+    "tags": [
+      "高钙",
+      "低糖",
+      "中老年"
+    ],
+    "stock": 42,
+    "rating": 4.6,
+    "reviews": 289,
+    "description": "高钙低糖配方，添加维生素 D，适合中老年人日常补充。",
+    "usage": "每次 4 平勺，用 200ml 温水冲调。",
+    "cautions": "不能替代药物；慢性病患者饮用前咨询医生。",
+    "aliases": [
+      "高钙奶粉",
+      "中老年奶粉",
+      "成人奶粉"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 23,
+    "return_rate": 0.036,
+    "gross_margin": 0.415
+  },
+  {
+    "id": "P029",
+    "name": "每日坚果礼盒 30 包",
+    "brand": "澄研",
+    "category": "坚果",
+    "department": "食品饮料",
+    "price": 99,
+    "original_price": 129,
+    "audience": [
+      "全人群"
+    ],
+    "attributes": {
+      "规格": "25g×30 包",
+      "口味": "原味",
+      "包装": "独立小包"
+    },
+    "tags": [
+      "坚果",
+      "礼盒",
+      "独立包装",
+      "零食"
+    ],
+    "stock": 58,
+    "rating": 4.7,
+    "reviews": 467,
+    "description": "每日坚果混合装，独立小包，适合办公室和送礼。",
+    "usage": "每日一包，开袋即食。",
+    "cautions": "坚果过敏者不宜；3 岁以下儿童需碾碎并在成人看护下食用。",
+    "aliases": [
+      "每日坚果",
+      "坚果礼盒",
+      "坚果"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 26,
+    "return_rate": 0.044,
+    "gross_margin": 0.46
+  },
+  {
+    "id": "P030",
+    "name": "原木抽纸 24 包",
+    "brand": "澄研",
+    "category": "纸巾",
+    "department": "家居日用",
+    "price": 49.9,
+    "original_price": 59.9,
+    "audience": [
+      "全人群"
+    ],
+    "attributes": {
+      "规格": "24 包",
+      "层数": "3 层",
+      "材质": "原生木浆"
+    },
+    "tags": [
+      "抽纸",
+      "家庭装",
+      "原生木浆"
+    ],
+    "stock": 100,
+    "rating": 4.8,
+    "reviews": 1520,
+    "description": "3 层原生木浆抽纸，柔韧不掉屑，适合家庭日常。",
+    "usage": "存放于干燥处，避免受潮。",
+    "cautions": "避免直接接触伤口；如遇过敏请停用。",
+    "aliases": [
+      "抽纸",
+      "纸巾",
+      "原木抽纸"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 72,
+    "return_rate": 0.067,
+    "gross_margin": 0.505
+  },
+  {
+    "id": "P031",
+    "name": "婴儿纸尿裤 L 码",
+    "brand": "澄研",
+    "category": "纸尿裤",
+    "department": "母婴",
+    "price": 129,
+    "original_price": 159,
+    "audience": [
+      "儿童"
+    ],
+    "attributes": {
+      "尺码": "L",
+      "适用体重": "9-14kg",
+      "类型": "日用"
+    },
+    "tags": [
+      "纸尿裤",
+      "婴儿",
+      "敏感肌"
+    ],
+    "stock": 50,
+    "rating": 4.7,
+    "reviews": 392,
+    "description": "轻薄透气，柔软表层，适合 9-14kg 宝宝日常使用。",
+    "usage": "及时更换，保持宝宝臀部干爽。",
+    "cautions": "如出现红臀或过敏，请停用并咨询医生。",
+    "aliases": [
+      "纸尿裤",
+      "尿不湿",
+      "婴儿纸尿裤"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 24,
+    "return_rate": 0.035,
+    "gross_margin": 0.28
+  },
+  {
+    "id": "P032",
+    "name": "儿童草莓味牙膏",
+    "brand": "澄研",
+    "category": "牙膏",
+    "department": "母婴",
+    "price": 29.9,
+    "original_price": 39.9,
+    "audience": [
+      "儿童"
+    ],
+    "attributes": {
+      "规格": "60g",
+      "适用年龄": "2-6 岁",
+      "口味": "草莓"
+    },
+    "tags": [
+      "儿童牙膏",
+      "含氟",
+      "草莓味"
+    ],
+    "stock": 75,
+    "rating": 4.6,
+    "reviews": 286,
+    "description": "低氟配方，草莓味，适合 2-6 岁儿童学习刷牙。",
+    "usage": "3 岁以下用米粒大小，3-6 岁用豌豆大小，家长协助刷牙。",
+    "cautions": "含氟产品，请按年龄控制用量，避免吞咽。",
+    "aliases": [
+      "儿童牙膏",
+      "草莓牙膏",
+      "牙膏"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 26,
+    "return_rate": 0.043,
+    "gross_margin": 0.325
+  },
+  {
+    "id": "P033",
+    "name": "316 不锈钢保温杯 500ml",
+    "brand": "澄研",
+    "category": "保温杯",
+    "department": "家居日用",
+    "price": 89,
+    "original_price": 119,
+    "audience": [
+      "全人群"
+    ],
+    "attributes": {
+      "容量": "500ml",
+      "材质": "316 不锈钢",
+      "保温": "6-8 小时"
+    },
+    "tags": [
+      "保温杯",
+      "316不锈钢",
+      "通勤"
+    ],
+    "stock": 52,
+    "rating": 4.7,
+    "reviews": 341,
+    "description": "316 不锈钢内胆，500ml 容量，适合通勤和日常饮水。",
+    "usage": "使用前用温水预热，避免剧烈碰撞。",
+    "cautions": "不要装碳酸饮料和强酸性饮品；盖紧后放置。",
+    "aliases": [
+      "保温杯",
+      "316保温杯",
+      "水杯"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 25,
+    "return_rate": 0.051,
+    "gross_margin": 0.37
+  },
+  {
+    "id": "P034",
+    "name": "折叠雨伞",
+    "brand": "澄研",
+    "category": "雨伞",
+    "department": "家居日用",
+    "price": 39.9,
+    "original_price": 49.9,
+    "audience": [
+      "全人群"
+    ],
+    "attributes": {
+      "颜色": [
+        "黑色",
+        "藏青"
+      ],
+      "伞骨": "8 骨",
+      "防晒": "UPF50+"
+    },
+    "tags": [
+      "雨伞",
+      "折叠",
+      "防晒"
+    ],
+    "stock": 90,
+    "rating": 4.5,
+    "reviews": 512,
+    "description": "八骨折叠伞，晴雨两用，UPF50+ 防晒。",
+    "usage": "使用后晾干再收纳，避免伞骨变形。",
+    "cautions": "大风天气注意安全，避免伞骨伤手。",
+    "aliases": [
+      "雨伞",
+      "折叠伞",
+      "晴雨伞"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 39,
+    "return_rate": 0.059,
+    "gross_margin": 0.415
+  },
+  {
+    "id": "P035",
+    "name": "防滑浴室拖鞋",
+    "brand": "澄研",
+    "category": "拖鞋",
+    "department": "家居日用",
+    "price": 39.9,
+    "original_price": 49.9,
+    "audience": [
+      "老人"
+    ],
+    "attributes": {
+      "尺码": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "颜色": [
+        "灰色",
+        "蓝色"
+      ],
+      "鞋底": "防滑"
+    },
+    "tags": [
+      "防滑",
+      "浴室",
+      "老人"
+    ],
+    "stock": 68,
+    "rating": 4.6,
+    "reviews": 224,
+    "description": "防滑底纹，轻便速干，适合浴室和居家。",
+    "usage": "建议按平时鞋码选择；湿滑地面仍需小心。",
+    "cautions": "拖鞋不适宜长时间户外行走。",
+    "aliases": [
+      "浴室拖鞋",
+      "防滑拖鞋",
+      "拖鞋"
+    ],
+    "is_new": false,
+    "skin_types": [],
+    "concerns": [],
+    "sales_30d": 26,
+    "return_rate": 0.067,
+    "gross_margin": 0.46
+  }
+]

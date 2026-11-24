@@ -1,0 +1,12 @@
+.git
+.idea
+.env
+runtime/*.db
+runtime/*.db-wal
+runtime/*.db-shm
+__pycache__
+.pytest_cache
+tests
+eval
+docs
+*.zip

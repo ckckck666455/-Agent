@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/OWNER/REPO/security/policy
+    about: 发布前把 OWNER/REPO 替换成你的仓库；请通过 Security 私密报告，不要公开贴密钥/隐私。

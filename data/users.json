@@ -1,0 +1,149 @@
+[
+  {
+    "user_id": "demo_user",
+    "name": "演示用户",
+    "member_tier": "普通会员",
+    "points": 0,
+    "concerns": [],
+    "allergies": [],
+    "city": "上海",
+    "joined_at": "2026-11-01",
+    "age_group": "成人",
+    "gender": "未知",
+    "segment": "新用户"
+  },
+  {
+    "user_id": "user_001",
+    "name": "林女士",
+    "member_tier": "黄金会员",
+    "points": 1280,
+    "skin_type": "油皮",
+    "concerns": [
+      "控油",
+      "痘痘",
+      "毛孔"
+    ],
+    "allergies": [],
+    "budget": 300,
+    "city": "上海",
+    "joined_at": "2025-06-18",
+    "phone_masked": "138****6621",
+    "age_group": "成人",
+    "gender": "女",
+    "segment": "职场女性"
+  },
+  {
+    "user_id": "user_002",
+    "name": "陈先生",
+    "member_tier": "白银会员",
+    "points": 420,
+    "skin_type": "干皮",
+    "concerns": [
+      "保湿",
+      "泛红",
+      "屏障"
+    ],
+    "allergies": [
+      "酒精"
+    ],
+    "budget": 400,
+    "city": "北京",
+    "joined_at": "2025-11-02",
+    "phone_masked": "139****3308",
+    "age_group": "成人",
+    "gender": "男",
+    "segment": "干敏皮男士"
+  },
+  {
+    "user_id": "user_003",
+    "name": "王女士",
+    "member_tier": "铂金会员",
+    "points": 3600,
+    "skin_type": "混合肌",
+    "concerns": [
+      "抗老",
+      "暗沉",
+      "细纹"
+    ],
+    "allergies": [],
+    "budget": 800,
+    "city": "深圳",
+    "joined_at": "2024-03-15",
+    "phone_masked": "136****9912",
+    "age_group": "成人",
+    "gender": "女",
+    "segment": "抗老需求"
+  },
+  {
+    "user_id": "user_004",
+    "name": "张爷爷",
+    "member_tier": "普通会员",
+    "points": 120,
+    "age_group": "老人",
+    "gender": "男",
+    "segment": "老年顾客",
+    "concerns": [
+      "防滑",
+      "高钙",
+      "易消化"
+    ],
+    "preferred_departments": [
+      "鞋",
+      "食品饮料",
+      "家居日用"
+    ],
+    "allergies": [],
+    "budget": 300,
+    "city": "杭州",
+    "joined_at": "2026-09-12",
+    "phone_masked": "137****2201"
+  },
+  {
+    "user_id": "user_005",
+    "name": "李女士",
+    "member_tier": "黄金会员",
+    "points": 860,
+    "age_group": "成人",
+    "gender": "女",
+    "segment": "宝妈 / 家庭采购",
+    "concerns": [
+      "儿童",
+      "家庭采购",
+      "性价比"
+    ],
+    "preferred_departments": [
+      "母婴",
+      "食品饮料",
+      "家居日用"
+    ],
+    "allergies": [],
+    "budget": 500,
+    "city": "杭州",
+    "joined_at": "2025-12-03",
+    "phone_masked": "135****7810"
+  },
+  {
+    "user_id": "user_006",
+    "name": "王先生",
+    "member_tier": "白银会员",
+    "points": 390,
+    "age_group": "成人",
+    "gender": "男",
+    "segment": "通勤男士",
+    "concerns": [
+      "通勤",
+      "运动",
+      "轻便"
+    ],
+    "preferred_departments": [
+      "服饰",
+      "鞋",
+      "箱包"
+    ],
+    "allergies": [],
+    "budget": 600,
+    "city": "杭州",
+    "joined_at": "2026-03-18",
+    "phone_masked": "136****5528"
+  }
+]

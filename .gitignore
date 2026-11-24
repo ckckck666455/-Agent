@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# 运行时数据库与会话
+runtime/*
+!runtime/.gitkeep
+*.db
+*.db-wal
+*.db-shm
+
+# 测试 / 缓存
+.pytest_cache/
+.pytest_cache*/
+pytest-cache-files-*/
+.coverage
+htmlcov/
+*.log
+*.zip
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store

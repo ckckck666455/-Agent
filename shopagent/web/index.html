@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小美 · 全品类生活馆 Agent</title>
+  <style>
+    :root {
+      --bg: #f4ede4;
+      --surface: #fffdf9;
+      --surface-2: #fbf6ef;
+      --ink: #26211f;
+      --muted: #7c7068;
+      --line: #e8ddd0;
+      --accent: #a9553f;
+      --accent-deep: #7f3d2e;
+      --accent-soft: #f5e3dc;
+      --teal: #2e6b63;
+      --teal-soft: #e2efeb;
+      --gold: #b9893d;
+      --shadow: 0 24px 70px rgba(68, 48, 38, 0.14);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(196, 139, 112, 0.20), transparent 34%),
+        radial-gradient(circle at 88% 96%, rgba(61, 120, 110, 0.16), transparent 38%),
+        var(--bg);
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button, textarea { font: inherit; }
+    button { cursor: pointer; }
+
+    .app {
+      width: min(1320px, 100%);
+      height: 100vh;
+      height: 100dvh;
+      margin: 0 auto;
+      padding: 22px;
+      display: grid;
+      grid-template-columns: 314px minmax(0, 1fr);
+      gap: 20px;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 26px 22px;
+      overflow-y: auto;
+      background: rgba(255, 253, 249, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 50px rgba(68, 48, 38, 0.08);
+      backdrop-filter: blur(18px);
+    }
+
+    .brand { display: flex; align-items: center; gap: 12px; }
+
+    .brand-mark {
+      width: 48px; height: 48px;
+      display: grid; place-items: center;
+      border-radius: 16px;
+      color: #fff;
+      font-family: "Songti SC", "SimSun", serif;
+      font-size: 23px;
+      background: linear-gradient(145deg, var(--accent), #7c382b);
+      box-shadow: 0 10px 22px rgba(169, 85, 63, 0.28);
+    }
+
+    .brand h1 { margin: 0; font-size: 21px; letter-spacing: 0.08em; }
+    .brand p { margin: 5px 0 0; color: var(--muted); font-size: 12px; letter-spacing: 0.04em; }
+
+    .status-card {
+      display: flex; align-items: center; gap: 11px;
+      padding: 13px 14px;
+      border-radius: 18px;
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+    }
+
+    .status-dot {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 5px rgba(185, 137, 61, 0.13);
+      flex: 0 0 auto;
+    }
+
+    .status-dot.online { background: var(--teal); box-shadow: 0 0 0 5px rgba(46, 107, 99, 0.13); }
+    .status-dot.offline { background: var(--gold); }
+
+    .status-copy { min-width: 0; }
+    .status-copy strong { display: block; font-size: 12.5px; }
+    .status-copy span { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+
+    .side-title {
+      margin: 0 0 10px;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .prompt-list { display: flex; flex-direction: column; gap: 8px; }
+
+    .prompt-btn {
+      width: 100%;
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      padding: 11px 12px;
+      text-align: left;
+      color: var(--ink);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .prompt-btn:hover {
+      border-color: #d5b9aa;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(68, 48, 38, 0.07);
+    }
+
+    .prompt-btn span:first-child { font-size: 12.5px; line-height: 1.35; }
+    .prompt-tag {
+      flex: 0 0 auto;
+      padding: 3px 7px;
+      border-radius: 999px;
+      color: var(--accent-deep);
+      background: var(--accent-soft);
+      font-size: 10px;
+    }
+
+    .capabilities ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 9px; }
+    .capabilities li { display: flex; gap: 9px; color: #4e443e; font-size: 12.5px; line-height: 1.5; }
+    .capabilities li b { color: var(--accent); font-weight: 600; }
+
+    .side-footer {
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px dashed var(--line);
+      color: var(--muted);
+      font-size: 10.5px;
+      line-height: 1.7;
+    }
+    .side-footer a { color: var(--teal); text-decoration: none; }
+
+    .chat-shell {
+      min-width: 0;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.82);
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .chat-header {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      padding: 20px 26px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 253, 249, 0.92);
+      backdrop-filter: blur(12px);
+    }
+
+    .header-title { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .header-title h2 { margin: 0; font-size: 17px; letter-spacing: 0.04em; }
+    .header-title p { margin: 4px 0 0; color: var(--muted); font-size: 11.5px; }
+
+    .mobile-avatar {
+      display: none;
+      width: 38px; height: 38px;
+      place-items: center;
+      border-radius: 13px;
+      color: #fff;
+      background: linear-gradient(145deg, var(--accent), #7c382b);
+      font-family: "Songti SC", serif;
+      font-size: 18px;
+    }
+
+    .header-actions { display: flex; align-items: center; gap: 10px; flex: 0 0 auto; }
+
+    .mode-pill {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: #5e534c;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .mode-pill i { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+
+    .clear-btn {
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      background: transparent;
+      font-size: 11px;
+    }
+    .clear-btn:hover { color: var(--accent-deep); border-color: #d5b9aa; }
+
+    .mobile-prompts { display: none; gap: 8px; padding: 10px 16px; overflow-x: auto; border-bottom: 1px solid var(--line); }
+    .mobile-prompts .prompt-btn { width: auto; flex: 0 0 auto; padding: 8px 10px; white-space: nowrap; }
+    .mobile-prompts .prompt-btn .prompt-tag { display: none; }
+
+    .messages {
+      flex: 1;
+      min-height: 0;
+      overflow-y: auto;
+      padding: 28px 28px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      scroll-behavior: smooth;
+    }
+
+    .messages::-webkit-scrollbar { width: 6px; }
+    .messages::-webkit-scrollbar-thumb { background: #e3d6c9; border-radius: 999px; }
+
+    .message { display: flex; align-items: flex-start; gap: 11px; max-width: 88%; animation: rise 0.28s ease both; }
+    .message.user { align-self: flex-end; flex-direction: row-reverse; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+
+    .avatar {
+      flex: 0 0 auto;
+      width: 34px; height: 34px;
+      display: grid; place-items: center;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .message.bot .avatar {
+      color: #fff;
+      background: linear-gradient(145deg, var(--accent), #7c382b);
+      font-family: "Songti SC", serif;
+      font-size: 16px;
+    }
+
+    .message.user .avatar { color: var(--teal); background: var(--teal-soft); }
+
+    .bubble-wrap { min-width: 0; display: flex; flex-direction: column; gap: 7px; }
+
+    .bubble {
+      padding: 14px 16px;
+      border-radius: 6px 20px 20px 20px;
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+      color: #342c28;
+      font-size: 13.5px;
+      line-height: 1.72;
+      word-break: break-word;
+      white-space: normal;
+    }
+
+    .message.user .bubble {
+      color: #fff;
+      background: linear-gradient(145deg, #b6634c, #994a36);
+      border-color: transparent;
+      border-radius: 20px 6px 20px 20px;
+    }
+
+    .bubble strong { color: var(--accent-deep); font-weight: 650; }
+    .message.user .bubble strong { color: #fff; }
+
+    .tool-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tool-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid #d9e8e3;
+      background: #f0f7f4;
+      color: #3e6d64;
+      font-size: 10px;
+    }
+    .tool-chip.fail { border-color: #edd6cf; background: #fbf0ed; color: #9f4f3a; }
+    .tool-chip span { opacity: 0.8; }
+
+    .meta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+    .emotion-tag {
+      padding: 3px 8px;
+      border-radius: 999px;
+      color: #8b5a1e;
+      background: #fbf1de;
+      font-size: 10px;
+    }
+
+    .handoff-card {
+      padding: 10px 12px;
+      border-radius: 13px;
+      border: 1px solid #efd1c6;
+      background: #fdf1ed;
+      color: #8d3f2c;
+      font-size: 11.5px;
+      line-height: 1.55;
+    }
+    .handoff-card b { letter-spacing: 0.04em; }
+
+    .typing { display: inline-flex; align-items: center; gap: 4px; padding: 5px 2px; }
+    .typing i { width: 6px; height: 6px; border-radius: 50%; background: #c3b2a6; animation: blink 1.15s infinite; }
+    .typing i:nth-child(2) { animation-delay: 0.16s; }
+    .typing i:nth-child(3) { animation-delay: 0.32s; }
+    @keyframes blink { 0%, 80%, 100% { opacity: 0.3; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-2px); } }
+
+    .composer {
+      position: relative;
+      padding: 12px 22px 16px;
+      border-top: 1px solid var(--line);
+      background: rgba(255, 253, 249, 0.96);
+    }
+
+    .input-shell {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      padding: 10px 10px 10px 16px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--surface-2);
+      transition: border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .input-shell:focus-within { border-color: #d2b09f; box-shadow: 0 0 0 4px rgba(169, 85, 63, 0.07); }
+
+    .composer textarea {
+      flex: 1;
+      min-height: 24px;
+      max-height: 132px;
+      resize: none;
+      border: 0;
+      outline: 0;
+      color: var(--ink);
+      background: transparent;
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+    .composer textarea::placeholder { color: #a89a90; }
+
+    .send-btn {
+      width: 40px; height: 40px;
+      flex: 0 0 auto;
+      display: grid; place-items: center;
+      border: 0;
+      border-radius: 14px;
+      color: #fff;
+      background: linear-gradient(145deg, var(--accent), #7c382b);
+      box-shadow: 0 8px 18px rgba(169, 85, 63, 0.24);
+      transition: transform 0.18s ease, opacity 0.18s ease;
+    }
+    .send-btn:hover { transform: translateY(-1px); }
+    .send-btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+    .send-btn svg { width: 17px; height: 17px; }
+
+    .composer-hint { margin: 8px 4px 0; color: #9c8f86; font-size: 10.5px; text-align: center; }
+
+    .error-bubble { border-color: #eccfc6; background: #fdf1ed; color: #8d3f2c; }
+
+    @media (max-width: 920px) {
+      .app { display: block; padding: 0; height: 100dvh; }
+      .sidebar { display: none; }
+      .chat-shell { height: 100dvh; border-radius: 0; border: 0; }
+      .chat-header { padding: 14px 16px; }
+      .mobile-avatar { display: grid; }
+      .header-title h2 { font-size: 15px; }
+      .header-title p { font-size: 10.5px; }
+      .mobile-prompts { display: flex; }
+      .messages { padding: 18px 14px 10px; gap: 14px; }
+      .message { max-width: 94%; }
+      .bubble { font-size: 13px; padding: 12px 14px; }
+      .composer { padding: 10px 12px 12px; }
+      .composer-hint { display: none; }
+      .mode-pill { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">澄</div>
+        <div>
+          <h1>小美</h1>
+          <p>澄研生活馆 · AI 导购顾问</p>
+        </div>
+      </div>
+
+      <div class="status-card">
+        <span class="status-dot" id="statusDot"></span>
+        <div class="status-copy">
+          <strong id="modeLabel">正在连接</strong>
+          <span id="modeDetail">读取服务状态中…</span>
+        </div>
+      </div>
+
+      <section>
+        <p class="side-title">可以这样问</p>
+        <div class="prompt-list" id="promptList"></div>
+      </section>
+
+      <section class="capabilities">
+        <p class="side-title">我能做什么</p>
+        <ul>
+          <li><b>01</b><span>按品类、人群和预算推荐真实在售商品</span></li>
+          <li><b>02</b><span>查订单、物流，登记退货与过敏售后</span></li>
+          <li><b>03</b><span>查优惠券、会员权益和店铺政策</span></li>
+          <li><b>04</b><span>识别情绪与投诉风险，及时转人工兜底</span></li>
+        </ul>
+      </section>
+
+      <div class="side-footer">
+        演示账号 user_001 · 数据为虚构样例<br />
+        <a href="/docs" target="_blank" rel="noreferrer">查看 API 文档</a> · 不产生真实交易
+      </div>
+    </aside>
+
+    <main class="chat-shell">
+      <header class="chat-header">
+        <div class="header-title">
+          <div class="mobile-avatar">美</div>
+          <div>
+            <h2>小美 · 生活馆导购</h2>
+            <p>澄研生活馆 · 全品类售前与售后</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <span class="mode-pill" id="modePill"><i></i>离线演示</span>
+          <button class="clear-btn" id="clearBtn" type="button">清空对话</button>
+        </div>
+      </header>
+
+      <div class="mobile-prompts" id="mobilePrompts"></div>
+
+      <div class="messages" id="messages" aria-live="polite"></div>
+
+      <form class="composer" id="composer">
+        <div class="input-shell">
+          <textarea
+            id="input"
+            rows="1"
+            maxlength="2000"
+            placeholder="想买什么？告诉我品类、给谁买、预算，或发订单号…"
+            aria-label="输入消息"
+          ></textarea>
+          <button class="send-btn" id="sendBtn" type="submit" aria-label="发送">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2 11 13"></path>
+              <path d="m22 2-7 20-4-9-9-4Z"></path>
+            </svg>
+          </button>
+        </div>
+        <p class="composer-hint">Enter 发送 · Shift + Enter 换行 · 商品、订单、库存等事实均来自业务工具</p>
+      </form>
+    </main>
+  </div>
+
+  <script>
+    const TOOL_LABELS = {
+      list_categories: "品类查询",
+      search_products: "商品查询",
+      get_product_detail: "商品详情",
+      check_stock: "库存查询",
+      compare_products: "商品对比",
+      query_order: "订单查询",
+      list_orders: "订单列表",
+      query_logistics: "物流查询",
+      create_return_request: "售后登记",
+      issue_coupon: "优惠券",
+      list_coupons: "我的券",
+      get_member_benefits: "会员权益",
+      get_promotions: "店铺活动",
+      search_faq: "政策知识库",
+      recommend_routine: "护肤流程",
+      add_to_cart: "加入购物车",
+      view_cart: "购物车",
+      update_user_profile: "画像更新",
+      get_user_profile: "用户画像",
+      request_human_handoff: "转人工"
+    };
+
+    const PROMPTS = [
+      { label: "给老人买防滑鞋", message: "给家里老人买一双防滑、宽楦的健步鞋，预算300以内", tag: "老人" },
+      { label: "给儿童买零食", message: "给5岁孩子买点零食，要安全一点", tag: "儿童" },
+      { label: "男士通勤衬衫", message: "给男士买一件通勤穿的纯棉衬衫，XL", tag: "男士" },
+      { label: "家庭饮料整箱", message: "家里聚餐，想买一箱无糖茶饮料", tag: "食品" },
+      { label: "油皮面霜", message: "我是油皮，想买300以内的面霜", tag: "美妆" },
+      { label: "态度投诉", message: "你啥态度？我要投诉", tag: "投诉" }
+    ];
+
+    const state = {
+      sessionId: null,
+      userId: "user_001",
+      busy: false
+    };
+
+    const messagesEl = document.getElementById("messages");
+    const inputEl = document.getElementById("input");
+    const composerEl = document.getElementById("composer");
+    const sendBtn = document.getElementById("sendBtn");
+    const clearBtn = document.getElementById("clearBtn");
+    const statusDot = document.getElementById("statusDot");
+    const modeLabel = document.getElementById("modeLabel");
+    const modeDetail = document.getElementById("modeDetail");
+    const modePill = document.getElementById("modePill");
+
+    function newSessionId() {
+      return "S" + Math.random().toString(36).slice(2, 12);
+    }
+
+    function loadSession() {
+      try {
+        const stored = sessionStorage.getItem("xiaomei_session");
+        if (stored) return stored;
+      } catch (_) {}
+      return newSessionId();
+    }
+
+    function saveSession(id) {
+      state.sessionId = id;
+      try { sessionStorage.setItem("xiaomei_session", id); } catch (_) {}
+    }
+
+    function escapeHtml(text) {
+      return String(text == null ? "" : text)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function formatReply(text) {
+      let safe = escapeHtml(text);
+      safe = safe.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+      return safe.replace(/\n/g, "<br />");
+    }
+
+    function scrollToBottom() {
+      requestAnimationFrame(() => {
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+      });
+    }
+
+    function addUserMessage(text) {
+      const wrap = document.createElement("div");
+      wrap.className = "message user";
+      wrap.innerHTML = '<div class="avatar">我</div><div class="bubble-wrap"><div class="bubble"></div></div>';
+      wrap.querySelector(".bubble").textContent = text;
+      messagesEl.appendChild(wrap);
+      scrollToBottom();
+    }
+
+    function addBotMessage(data) {
+      const wrap = document.createElement("div");
+      wrap.className = "message bot";
+      wrap.innerHTML = '<div class="avatar">美</div><div class="bubble-wrap"></div>';
+      const bubbleWrap = wrap.querySelector(".bubble-wrap");
+
+      if (data.tool_calls && data.tool_calls.length) {
+        const row = document.createElement("div");
+        row.className = "tool-row";
+        data.tool_calls.forEach((tool) => {
+          const chip = document.createElement("span");
+          chip.className = "tool-chip" + (tool.ok ? "" : " fail");
+          chip.textContent = (tool.ok ? "✓ " : "× ") + (TOOL_LABELS[tool.name] || tool.name);
+          row.appendChild(chip);
+        });
+        bubbleWrap.appendChild(row);
+      }
+
+      const bubble = document.createElement("div");
+      bubble.className = "bubble";
+      bubble.innerHTML = formatReply(data.reply || "我暂时没有拿到结果，请再试一次。");
+      bubbleWrap.appendChild(bubble);
+
+      const meta = document.createElement("div");
+      meta.className = "meta-row";
+
+      if (data.emotion && data.emotion.level >= 1) {
+        const emotion = document.createElement("span");
+        emotion.className = "emotion-tag";
+        emotion.textContent = "情绪识别 · " + (data.emotion.label || "不满");
+        meta.appendChild(emotion);
+      }
+
+      if (meta.childNodes.length) bubbleWrap.appendChild(meta);
+
+      if (data.handoff) {
+        const card = document.createElement("div");
+        card.className = "handoff-card";
+        card.innerHTML = "<b>已创建人工工单</b><br />工单号：" + escapeHtml(data.handoff.ticket_id) +
+          " · 优先级：" + escapeHtml(data.handoff.priority) +
+          "<br />人工客服接入后会继续处理，当前对话记录已一并转交。";
+        bubbleWrap.appendChild(card);
+      }
+
+      messagesEl.appendChild(wrap);
+      scrollToBottom();
+    }
+
+    function addError(text) {
+      const wrap = document.createElement("div");
+      wrap.className = "message bot";
+      wrap.innerHTML = '<div class="avatar">美</div><div class="bubble-wrap"><div class="bubble error-bubble"></div></div>';
+      wrap.querySelector(".bubble").textContent = text;
+      messagesEl.appendChild(wrap);
+      scrollToBottom();
+    }
+
+    function addTyping() {
+      const wrap = document.createElement("div");
+      wrap.className = "message bot";
+      wrap.id = "typingIndicator";
+      wrap.innerHTML = '<div class="avatar">美</div><div class="bubble-wrap"><div class="bubble"><span class="typing"><i></i><i></i><i></i></span></div></div>';
+      messagesEl.appendChild(wrap);
+      scrollToBottom();
+    }
+
+    function removeTyping() {
+      const node = document.getElementById("typingIndicator");
+      if (node) node.remove();
+    }
+
+    function renderPrompts() {
+      const lists = [document.getElementById("promptList"), document.getElementById("mobilePrompts")];
+      lists.forEach((list) => {
+        list.innerHTML = "";
+        PROMPTS.forEach((prompt) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "prompt-btn";
+          const label = document.createElement("span");
+          label.textContent = prompt.label;
+          const tag = document.createElement("span");
+          tag.className = "prompt-tag";
+          tag.textContent = prompt.tag;
+          btn.appendChild(label);
+          btn.appendChild(tag);
+          btn.addEventListener("click", () => sendMessage(prompt.message));
+          list.appendChild(btn);
+        });
+      });
+    }
+
+    function renderWelcome() {
+      messagesEl.innerHTML = "";
+      addBotMessage({
+        reply: "你好，我是小美，澄研生活馆的全品类导购兼售后顾问。\n我们卖美妆、服饰、鞋、箱包、食品饮料、母婴和家居日用。你可以告诉我想买什么、给谁买、预算多少；我也能查订单、物流、优惠券，或登记售后。\n今天想先看什么？",
+        tool_calls: [],
+        emotion: { level: 0 }
+      });
+    }
+
+    async function refreshHealth() {
+      try {
+        const response = await fetch("/api/health");
+        if (!response.ok) throw new Error("health failed");
+        const data = await response.json();
+        const mode = data.mode || "offline";
+        if (mode === "deepseek") {
+          statusDot.className = "status-dot online";
+          modeLabel.textContent = "DeepSeek 在线";
+          modeDetail.textContent = (data.model || "deepseek") + " · 工具调用已启用";
+          modePill.innerHTML = "<i style='background:#2e6b63'></i>DeepSeek 在线";
+        } else if (mode === "deepseek_fallback") {
+          statusDot.className = "status-dot";
+          modeLabel.textContent = "DeepSeek 降级";
+          modeDetail.textContent = "模型暂不可用，已切换离线规则引擎";
+          modePill.innerHTML = "<i></i>离线降级";
+        } else {
+          statusDot.className = "status-dot offline";
+          modeLabel.textContent = "离线演示模式";
+          modeDetail.textContent = "未配置 API Key，使用规则引擎跑通全流程";
+          modePill.innerHTML = "<i></i>离线演示";
+        }
+      } catch (error) {
+        statusDot.className = "status-dot offline";
+        modeLabel.textContent = "服务连接失败";
+        modeDetail.textContent = "请确认 API 已启动";
+      }
+    }
+
+    async function sendMessage(text) {
+      const message = String(text || "").trim();
+      if (!message || state.busy) return;
+
+      state.busy = true;
+      sendBtn.disabled = true;
+      inputEl.disabled = true;
+      addUserMessage(message);
+      inputEl.value = "";
+      inputEl.style.height = "auto";
+      addTyping();
+
+      try {
+        const response = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            message: message,
+            session_id: state.sessionId,
+            user_id: state.userId
+          })
+        });
+        const data = await response.json().catch(() => ({}));
+        removeTyping();
+        if (!response.ok) {
+          throw new Error(data.detail || "请求失败，请稍后重试");
+        }
+        saveSession(data.session_id || state.sessionId);
+        addBotMessage(data);
+      } catch (error) {
+        removeTyping();
+        addError("抱歉，服务暂时不可用：" + (error.message || "请稍后再试"));
+      } finally {
+        state.busy = false;
+        sendBtn.disabled = false;
+        inputEl.disabled = false;
+        inputEl.focus();
+      }
+    }
+
+    composerEl.addEventListener("submit", (event) => {
+      event.preventDefault();
+      sendMessage(inputEl.value);
+    });
+
+    inputEl.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        sendMessage(inputEl.value);
+      }
+    });
+
+    inputEl.addEventListener("input", () => {
+      inputEl.style.height = "auto";
+      inputEl.style.height = Math.min(inputEl.scrollHeight, 132) + "px";
+    });
+
+    clearBtn.addEventListener("click", async () => {
+      if (state.busy) return;
+      const oldSession = state.sessionId;
+      saveSession(newSessionId());
+      renderWelcome();
+      if (oldSession) {
+        try {
+          await fetch("/api/sessions/" + encodeURIComponent(oldSession) + "?user_id=" + encodeURIComponent(state.userId), { method: "DELETE" });
+        } catch (_) {}
+      }
+      inputEl.focus();
+    });
+
+    saveSession(loadSession());
+    renderPrompts();
+    renderWelcome();
+    refreshHealth();
+    inputEl.focus();
+  </script>
+</body>
+</html>

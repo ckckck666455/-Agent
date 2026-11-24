@@ -1,0 +1,31 @@
+services:
+  mock-erp:
+    build: .
+    command: python run_erp.py --host 0.0.0.0 --port 8100
+    ports:
+      - "8100:8100"
+    environment:
+      ERP_API_KEY: ${ERP_API_KEY:-}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8100/erp/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  agent:
+    build: .
+    command: python run_api.py --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      ERP_BASE_URL: http://mock-erp:8100
+      ERP_API_KEY: ${ERP_API_KEY:-}
+      LLM_MODE: ${LLM_MODE:-auto}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      DEEPSEEK_MODEL: ${DEEPSEEK_MODEL:-deepseek-flash}
+      DEMO_NOW: ${DEMO_NOW:-2026-11-04 14:00}
+    depends_on:
+      mock-erp:
+        condition: service_healthy
+    volumes:
+      - ./runtime:/app/runtime

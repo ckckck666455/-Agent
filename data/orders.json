@@ -1,0 +1,473 @@
+[
+  {
+    "order_id": "DD2026001",
+    "user_id": "user_001",
+    "status": "已发货",
+    "status_code": "shipped",
+    "items": [
+      {
+        "product_id": "P001",
+        "name": "清润控油面霜",
+        "quantity": 1,
+        "price": 299
+      }
+    ],
+    "amount": 359,
+    "discount": 60,
+    "paid": 299,
+    "carrier": "顺丰速运",
+    "tracking_no": "SF123456789",
+    "created_at": "2026-10-30 10:12",
+    "paid_at": "2026-10-30 10:15",
+    "shipped_at": "2026-10-31 09:20",
+    "delivered_at": null,
+    "estimated_delivery": "2026-11-05",
+    "address_masked": "上海市浦东新区****",
+    "timeline": [
+      {
+        "time": "2026-10-31 09:20",
+        "status": "已揽收",
+        "detail": "顺丰速运已揽收，发往上海转运中心"
+      },
+      {
+        "time": "2026-11-01 18:40",
+        "status": "运输中",
+        "detail": "快件已到达上海转运中心"
+      },
+      {
+        "time": "2026-11-03 08:15",
+        "status": "派送中",
+        "detail": "快递员正在派送，请保持电话畅通"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": "2026-11-12",
+    "note": "用户已购买运费险"
+  },
+  {
+    "order_id": "DD2026002",
+    "user_id": "user_001",
+    "status": "待发货",
+    "status_code": "pending",
+    "items": [
+      {
+        "product_id": "P003",
+        "name": "焕亮精华",
+        "quantity": 1,
+        "price": 499
+      }
+    ],
+    "amount": 499,
+    "discount": 0,
+    "paid": 499,
+    "carrier": null,
+    "tracking_no": null,
+    "created_at": "2026-11-04 09:02",
+    "paid_at": "2026-11-04 09:03",
+    "shipped_at": null,
+    "delivered_at": null,
+    "estimated_delivery": "2026-11-06",
+    "address_masked": "上海市浦东新区****",
+    "timeline": [
+      {
+        "time": "2026-11-04 09:03",
+        "status": "已付款",
+        "detail": "订单已支付，仓库正在配货"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": null,
+    "note": "现货商品，承诺 48 小时内发出"
+  },
+  {
+    "order_id": "DD2026003",
+    "user_id": "user_002",
+    "status": "已签收",
+    "status_code": "delivered",
+    "items": [
+      {
+        "product_id": "P002",
+        "name": "修护保湿面霜",
+        "quantity": 1,
+        "price": 399
+      }
+    ],
+    "amount": 399,
+    "discount": 0,
+    "paid": 399,
+    "carrier": "中通快递",
+    "tracking_no": "ZT987654321",
+    "created_at": "2026-10-27 14:20",
+    "paid_at": "2026-10-27 14:22",
+    "shipped_at": "2026-10-28 11:00",
+    "delivered_at": "2026-11-01 16:30",
+    "estimated_delivery": "2026-11-01",
+    "address_masked": "北京市朝阳区****",
+    "timeline": [
+      {
+        "time": "2026-10-28 11:00",
+        "status": "已揽收",
+        "detail": "中通快递已揽收"
+      },
+      {
+        "time": "2026-11-01 16:30",
+        "status": "已签收",
+        "detail": "快件已由本人签收，感谢使用中通快递"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": "2026-11-08",
+    "note": "未拆封，支持七天无理由"
+  },
+  {
+    "order_id": "DD2026004",
+    "user_id": "user_003",
+    "status": "运输中",
+    "status_code": "in_transit",
+    "items": [
+      {
+        "product_id": "P010",
+        "name": "紧致抗老眼霜",
+        "quantity": 1,
+        "price": 459
+      },
+      {
+        "product_id": "P009",
+        "name": "玻尿酸补水面膜",
+        "quantity": 1,
+        "price": 99
+      }
+    ],
+    "amount": 558,
+    "discount": 30,
+    "paid": 528,
+    "carrier": "顺丰速运",
+    "tracking_no": "SF555666777",
+    "created_at": "2026-10-29 20:45",
+    "paid_at": "2026-10-29 20:46",
+    "shipped_at": "2026-10-30 10:10",
+    "delivered_at": null,
+    "estimated_delivery": "2026-11-03",
+    "address_masked": "广东省深圳市南山区****",
+    "timeline": [
+      {
+        "time": "2026-10-30 10:10",
+        "status": "已揽收",
+        "detail": "顺丰速运已揽收"
+      },
+      {
+        "time": "2026-11-01 07:30",
+        "status": "运输中",
+        "detail": "快件已到达深圳中转场"
+      },
+      {
+        "time": "2026-11-03 09:00",
+        "status": "异常",
+        "detail": "受天气影响，预计延误 1-2 天，已为您催促"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": null,
+    "note": "物流延误，可主动补偿 10 元无门槛券"
+  },
+  {
+    "order_id": "DD2026005",
+    "user_id": "user_001",
+    "status": "已签收",
+    "status_code": "delivered",
+    "items": [
+      {
+        "product_id": "P005",
+        "name": "氨基酸净澈洁面乳",
+        "quantity": 1,
+        "price": 89
+      }
+    ],
+    "amount": 89,
+    "discount": 0,
+    "paid": 89,
+    "carrier": "中通快递",
+    "tracking_no": "ZT111222333",
+    "created_at": "2026-09-22 11:10",
+    "paid_at": "2026-09-22 11:12",
+    "shipped_at": "2026-09-23 09:00",
+    "delivered_at": "2026-09-25 15:20",
+    "estimated_delivery": "2026-09-25",
+    "address_masked": "上海市浦东新区****",
+    "timeline": [
+      {
+        "time": "2026-09-25 15:20",
+        "status": "已签收",
+        "detail": "快件已由本人签收"
+      }
+    ],
+    "returnable": false,
+    "return_deadline": "2026-10-02",
+    "note": "已超过七天无理由期限"
+  },
+  {
+    "order_id": "DD2026006",
+    "user_id": "user_002",
+    "status": "已取消",
+    "status_code": "cancelled",
+    "items": [
+      {
+        "product_id": "P008",
+        "name": "轻透防晒乳 SPF50+",
+        "quantity": 2,
+        "price": 189
+      }
+    ],
+    "amount": 378,
+    "discount": 20,
+    "paid": 0,
+    "carrier": null,
+    "tracking_no": null,
+    "created_at": "2026-10-26 08:30",
+    "paid_at": null,
+    "shipped_at": null,
+    "delivered_at": null,
+    "estimated_delivery": null,
+    "address_masked": "北京市朝阳区****",
+    "timeline": [
+      {
+        "time": "2026-10-26 08:35",
+        "status": "已取消",
+        "detail": "用户主动取消，未支付"
+      }
+    ],
+    "returnable": false,
+    "return_deadline": null,
+    "note": "未支付取消"
+  },
+  {
+    "order_id": "DD2026007",
+    "user_id": "user_003",
+    "status": "已签收",
+    "status_code": "delivered",
+    "items": [
+      {
+        "product_id": "P003",
+        "name": "焕亮精华",
+        "quantity": 1,
+        "price": 499
+      }
+    ],
+    "amount": 499,
+    "discount": 0,
+    "paid": 499,
+    "carrier": "顺丰速运",
+    "tracking_no": "SF777888999",
+    "created_at": "2026-10-28 16:00",
+    "paid_at": "2026-10-28 16:02",
+    "shipped_at": "2026-10-29 10:00",
+    "delivered_at": "2026-11-02 12:10",
+    "estimated_delivery": "2026-11-02",
+    "address_masked": "广东省深圳市南山区****",
+    "timeline": [
+      {
+        "time": "2026-11-02 12:10",
+        "status": "已签收",
+        "detail": "快件已放至丰巢柜"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": "2026-11-09",
+    "note": "用户反馈瓶身有破损，可走质量问题售后"
+  },
+  {
+    "order_id": "DD2026008",
+    "user_id": "user_001",
+    "status": "待发货",
+    "status_code": "pending",
+    "items": [
+      {
+        "product_id": "P008",
+        "name": "轻透防晒乳 SPF50+",
+        "quantity": 1,
+        "price": 189
+      }
+    ],
+    "amount": 189,
+    "discount": 0,
+    "paid": 189,
+    "carrier": null,
+    "tracking_no": null,
+    "created_at": "2026-11-04 13:20",
+    "paid_at": "2026-11-04 13:21",
+    "shipped_at": null,
+    "delivered_at": null,
+    "estimated_delivery": "2026-11-06",
+    "address_masked": "上海市浦东新区****",
+    "timeline": [
+      {
+        "time": "2026-11-04 13:21",
+        "status": "已付款",
+        "detail": "仓库正在配货"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": null,
+    "note": "可修改收货地址"
+  },
+  {
+    "order_id": "DD2026009",
+    "user_id": "user_001",
+    "status": "已签收",
+    "status_code": "delivered",
+    "items": [
+      {
+        "product_id": "P004",
+        "name": "水杨酸净痘凝胶",
+        "quantity": 1,
+        "price": 159
+      }
+    ],
+    "amount": 159,
+    "discount": 0,
+    "paid": 159,
+    "carrier": "中通快递",
+    "tracking_no": "ZT456789123",
+    "created_at": "2026-10-29 19:10",
+    "paid_at": "2026-10-29 19:12",
+    "shipped_at": "2026-10-30 10:30",
+    "delivered_at": "2026-11-02 14:20",
+    "estimated_delivery": "2026-11-02",
+    "address_masked": "上海市浦东新区****",
+    "timeline": [
+      {
+        "time": "2026-10-30 10:30",
+        "status": "已揽收",
+        "detail": "中通快递已揽收"
+      },
+      {
+        "time": "2026-11-02 14:20",
+        "status": "已签收",
+        "detail": "快件已由本人签收"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": "2026-11-09",
+    "note": "用户反馈局部使用时刺痛，可走质量问题售后"
+  },
+  {
+    "order_id": "DD2026010",
+    "user_id": "user_004",
+    "status": "已签收",
+    "status_code": "delivered",
+    "items": [
+      {
+        "product_id": "P020",
+        "name": "老人防滑健步鞋",
+        "quantity": 1,
+        "price": 259
+      }
+    ],
+    "amount": 259,
+    "discount": 0,
+    "paid": 259,
+    "carrier": "顺丰速运",
+    "tracking_no": "SF20261102001",
+    "created_at": "2026-10-30 09:12",
+    "paid_at": "2026-10-30 09:14",
+    "shipped_at": "2026-10-31 10:00",
+    "delivered_at": "2026-11-02 15:30",
+    "estimated_delivery": "2026-11-02",
+    "address_masked": "浙江省杭州市西湖区****",
+    "timeline": [
+      {
+        "time": "2026-10-31 10:00",
+        "status": "已揽收",
+        "detail": "顺丰速运已揽收"
+      },
+      {
+        "time": "2026-11-02 15:30",
+        "status": "已签收",
+        "detail": "快件已由本人签收"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": "2026-11-09",
+    "note": "老人试穿后觉得鞋底偏硬，可登记退换"
+  },
+  {
+    "order_id": "DD2026011",
+    "user_id": "user_005",
+    "status": "已签收",
+    "status_code": "delivered",
+    "items": [
+      {
+        "product_id": "P027",
+        "name": "儿童奶酪棒 500g",
+        "quantity": 1,
+        "price": 49.9
+      }
+    ],
+    "amount": 49.9,
+    "discount": 0,
+    "paid": 49.9,
+    "carrier": "中通快递",
+    "tracking_no": "ZT20261103002",
+    "created_at": "2026-11-01 18:20",
+    "paid_at": "2026-11-01 18:21",
+    "shipped_at": "2026-11-02 09:10",
+    "delivered_at": "2026-11-03 11:40",
+    "estimated_delivery": "2026-11-03",
+    "address_masked": "浙江省杭州市滨江区****",
+    "timeline": [
+      {
+        "time": "2026-11-02 09:10",
+        "status": "已揽收",
+        "detail": "中通快递已揽收"
+      },
+      {
+        "time": "2026-11-03 11:40",
+        "status": "已签收",
+        "detail": "快件已放至快递柜"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": "2026-11-10",
+    "note": "食品类，已拆封非质量问题不支持退货"
+  },
+  {
+    "order_id": "DD2026012",
+    "user_id": "user_006",
+    "status": "已发货",
+    "status_code": "shipped",
+    "items": [
+      {
+        "product_id": "P013",
+        "name": "男士纯棉衬衫",
+        "quantity": 1,
+        "price": 199
+      }
+    ],
+    "amount": 199,
+    "discount": 0,
+    "paid": 199,
+    "carrier": "顺丰速运",
+    "tracking_no": "SF20261104003",
+    "created_at": "2026-11-03 20:15",
+    "paid_at": "2026-11-03 20:16",
+    "shipped_at": "2026-11-04 09:00",
+    "delivered_at": null,
+    "estimated_delivery": "2026-11-05",
+    "address_masked": "浙江省杭州市余杭区****",
+    "timeline": [
+      {
+        "time": "2026-11-04 09:00",
+        "status": "已揽收",
+        "detail": "顺丰速运已揽收"
+      },
+      {
+        "time": "2026-11-04 16:20",
+        "status": "运输中",
+        "detail": "快件已到达杭州转运中心"
+      }
+    ],
+    "returnable": true,
+    "return_deadline": null,
+    "note": "用户可修改尺码，建议签收后按吊牌退换"
+  }
+]
