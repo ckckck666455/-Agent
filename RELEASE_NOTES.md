@@ -16,8 +16,8 @@
 ## Quickstart
 
 ```bash
-git clone https://github.com/<your-name>/xiaomei-shop-agent.git
-cd xiaomei-shop-agent
+git clone https://github.com/ckckck666455/-Agent.git
+cd ./-Agent
 python -m venv .venv
 source .venv/bin/activate  # Windows: .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
